@@ -1,0 +1,14 @@
+#DEBUG = True
+#override CGRID_ICE_DYNAMICS = True
+#override DO_ICEBERGS = False
+#override ICE_OCEAN_STRESS_STAGGER = "C"
+#override CONTINUITY_H_NEGLECT = 1e-28 kg m-2
+#override CONTINUITY_FRAC_NEGLECT=1e-20
+#override ICE_COVER_DISCARD = 1e-30
+#override ADCROFT_ADVECTIVE_CFL = True
+#override CONCENTRATION_INIT_CONFIG = "latitudes" ! default = "data_override"
+#override ICE_THICKNESS_INIT_CONFIG = "uniform" ! default = "data_override"
+#override ARCTIC_ICE_EDGE_IC = 67.0       !   [degrees of latitude] default = 91.0
+#override ICE_INIT_MASS = 900.0           !   [kg m-2] default = 0.0
+#override ICE_SALINITY_IC = 4.0           !   [g kg-1] default = 0.0
+#override ICE_TEMPERATURE_IC = -4.0       !   [degC] default = 0.0
