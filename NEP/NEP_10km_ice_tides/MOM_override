@@ -1,0 +1,13 @@
+#override RESOLN_SCALED_KHTR = True
+#override KH_RES_FN_POWER = 100
+#override VISC_RES_FN_POWER = 100
+#override MIN_THICKNESS = 1.e-3
+SAVE_INITIAL_CONDS = False
+
+#DEBUG = True
+#DEBUG_BT = True
+#VERBOSITY = 9
+
+!#override LINEARIZED_BT_CORIOLIS = False
+!#override BT_STRONG_DRAG = True
+!#override BT_NONLIN_STRESS = True

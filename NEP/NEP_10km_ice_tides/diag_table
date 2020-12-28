@@ -1,0 +1,104 @@
+NEP 75 vertical levels ice tides
+1900 1 1 0 0 0
+#"ocean_secs",   100,"seconds", 1, "hours", "time"
+"ocean_hourly",   1,  "hours", 1, "hours", "time"
+"ocean_daily",    1,   "days", 1, "hours", "time"
+"ocean_static",  -1,   months, 1,  "days", "time"
+#"flux",           1,  "hours", 1, "hours", "time"
+#"ocean_model_z",  1,   "days", 1, "hours", "time"
+#"ocean_monthly",  1, "months", 1, "hours", "time"
+
+#"ocean_model","eta_hifreq","eta_hifreq","ocean_secs","all",.false.,"none",2
+#"ocean_model","ubt_hifreq","ubt_hifreq","ocean_secs","all",.false.,"none",2
+#"ocean_model","vbt_hifreq","vbt_hifreq","ocean_secs","all",.false.,"none",2
+
+"ocean_model", "SSH",          "ssh",              "ocean_hourly", "all", .false., "none",2
+#"ocean_model","SSU","ssu","ocean_hourly","all",.false.,"none",2
+#"ocean_model","SSV","ssv","ocean_hourly","all",.false.,"none",2
+#"ocean_model", "ubt",          "ubt",              "ocean_hourly", "all", .false., "none",2
+#"ocean_model", "vbt",          "vbt",              "ocean_hourly", "all", .false., "none",2
+#"ice_model",  "SWDN",          "swdn",             "ocean_hourly", "all", .false., "none",2
+
+#"ocean_model", "eta_hifreq",   "eta",              "ocean_bt", "all", "mean", "none",2
+#"ocean_model", "SSU",          "ssu",              "ocean_daily", "all", "mean", "none",2
+#"ocean_model", "SSV",          "ssv",              "ocean_daily", "all", "mean", "none",2
+#"ocean_model", "SST",          "sst",              "ocean_daily", "all", "mean", "none",2
+#"ocean_model", "SSS",          "sss",              "ocean_daily", "all", "mean", "none",2
+"ocean_model", "SSH",          "ssh",              "ocean_daily", "all", "mean", "none",2
+"ocean_model", "thetao",       "thetao",           "ocean_daily", "all", "mean", "none",2
+"ocean_model", "so",           "so",               "ocean_daily", "all", "mean", "none",2
+"ocean_model", "uo",           "uo",               "ocean_daily", "all", "mean", "none",2
+"ocean_model", "vo",           "vo",               "ocean_daily", "all", "mean", "none",2
+"ocean_model", "ubt",          "ubt",              "ocean_daily", "all", "mean", "none",2
+"ocean_model", "vbt",          "vbt",              "ocean_daily", "all", "mean", "none",2
+"ocean_model", "RV",           "RV",               "ocean_daily", "all", "mean", "none",2
+"ocean_model", "MEKE",           "MEKE",               "ocean_daily", "all", "mean", "none",2
+#"ocean_model",  "rlntds",     "rlntds",           "ocean_daily", "all", "mean", "none",2  # longwave down
+#"ocean_model",  "hfls",       "hfls",             "ocean_daily", "all", "mean", "none",2  # latent heat for evap+melt
+#"ocean_model",  "hfss",       "hfss",             "ocean_daily", "all", "mean", "none",2  # sensible from air-sea and ice-sea
+#"ocean_model",  "rsntds",     "rsntds",           "ocean_daily", "all", "mean", "none",2  # shortwave
+#"ocean_model",  "rsdo",       "rsdo",             "ocean_daily", "all", "mean", "none",2  # penetratie shortwave
+#"ocean_model",  "hfds",       "hfds",             "ocean_daily", "all", "mean", "none",2  # total heat entering ocean surface
+#"ocean_model",  "ePBL_h_ML",  "ePBL_h_ML",        "ocean_daily", "all", "mean", "none",2  # boundary layer thickness
+"ocean_model",  "taux",       "taux",             "ocean_daily", "all", "mean", "none",2
+"ocean_model",  "tauy",       "tauy",             "ocean_daily", "all", "mean", "none",2
+#"ocean_model",  "ustar",      "ustar",            "ocean_daily", "all", "mean", "none",2  # friction vel
+
+#"flux", "u_ref", "u_ref", "ocean_hourly", "all", "mean", "none", 2
+#"flux", "v_ref", "v_ref", "ocean_hourly", "all", "mean", "none", 2
+
+# CMIP6/OMIP Table G1: static information
+# "ocean_model", "areacello",   "areacello",   "ocean_static", "all", "none", "none", 2
+# "ocean_model", "deptho",      "deptho",      "ocean_static", "all", "none", "none", 2
+# "ocean_model", "basin",       "basin",       "ocean_static", "all", "none", "none", 2  # in /archive/gold/datasets/OM4_025/
+# "ocean_model", "hfgeou",      "hfgeou",      "ocean_static", "all", "none", "none", 2  # for static geothermal heat
+# "ocean_model", "sftof",       "sftof",       "ocean_static", "all", "none", "none", 2
+
+# Extra static geometry data beyond CMIP6/OMIP Table 2.1
+# "ocean_model", "Coriolis",    "Coriolis",    "ocean_static", "all", "none", "none", 2
+# "ocean_model", "geolon",      "geolon",      "ocean_static", "all", "none", "none", 2
+# "ocean_model", "geolat",      "geolat",      "ocean_static", "all", "none", "none", 2
+# "ocean_model", "geolon_c",    "geolon_c",    "ocean_static", "all", "none", "none", 2
+# "ocean_model", "geolat_c",    "geolat_c",    "ocean_static", "all", "none", "none", 2
+# "ocean_model", "geolon_u",    "geolon_u",    "ocean_static", "all", "none", "none", 2
+# "ocean_model", "geolat_u",    "geolat_u",    "ocean_static", "all", "none", "none", 2
+# "ocean_model", "geolon_v",    "geolon_v",    "ocean_static", "all", "none", "none", 2
+
+# "ocean_model", "geolat_v",    "geolat_v",    "ocean_static", "all", "none", "none", 2
+# "ocean_model", "wet",         "wet",         "ocean_static", "all", "none", "none", 2
+# "ocean_model", "wet_c",       "wet_c",       "ocean_static", "all", "none", "none", 2
+# "ocean_model", "wet_u",       "wet_u",       "ocean_static", "all", "none", "none", 2
+# "ocean_model", "wet_v",       "wet_v",       "ocean_static", "all", "none", "none", 2
+# "ocean_model", "dxt",         "dxt",         "ocean_static", "all", "none", "none", 2
+# "ocean_model", "dyt",         "dyt",         "ocean_static", "all", "none", "none", 2
+# "ocean_model", "dxCu",        "dxCu",        "ocean_static", "all", "none", "none", 2
+# "ocean_model", "dyCu",        "dyCu",        "ocean_static", "all", "none", "none", 2
+# "ocean_model", "dxCv",        "dxCv",        "ocean_static", "all", "none", "none", 2
+# "ocean_model", "dyCv",        "dyCv",        "ocean_static", "all", "none", "none", 2
+# "ocean_model", "areacello_cu","areacello_cu","ocean_static", "all", "none", "none", 2
+# "ocean_model", "areacello_cv","areacello_cv","ocean_static", "all", "none", "none", 2
+# "ocean_model", "areacello_bu","areacello_bu","ocean_static", "all", "none", "none", 2
+
+#"ocean_model",  "rlntds",     "rlntds", "ocean_hourly", "all", "mean", "none",2  # longwave down
+#"ocean_model",  "rsntds",     "rsntds", "ocean_hourly", "all", "mean", "none",2  # shortwave
+#"ocean_model",  "hfds",       "hfds",   "ocean_hourly", "all", "mean", "none",2  # total heat entering ocean surface
+
+#"ocean_model",  "Kd_interface",  "Kd_interface",  "ocean_daily", "all", "mean", "none",2  # friction vel
+"ice_model",  "CI_tot",     "aice",      "ocean_daily", "all", "mean", "none",2
+#"ice_model",  "UI",     "uice",      "ocean_daily", "all", "mean", "none",2
+#"ice_model",  "VI",     "vice",      "ocean_daily", "all", "mean", "none",2
+#"ice_model",  "HI",     "hice",      "ocean_daily", "all", "mean", "none",2
+#"ice_model",  "HS",     "hsnow",     "ocean_daily", "all", "mean", "none",2
+"ice_model",  "sivol",     "sivol",     "ocean_daily", "all", "mean", "none",2
+"ice_model",  "sisnthick",   "snow_thick",      "ocean_daily", "all", "mean", "none",2
+#"ice_model",  "sh_d_hf",     "sh_d_hf",      "ocean_daily", "all", "mean", "none",2
+#"ice_model",  "SWDN",    "swdn",      "ocean_daily", "all", "mean", "none",2
+
+#"ocean_model", "thetao",       "thetao",       "ocean_monthly", "all", "mean", "none",2
+#"ocean_model", "so",           "so",           "ocean_monthly", "all", "mean", "none",2
+#"ocean_model", "uo",           "uo",           "ocean_monthly", "all", "mean", "none",2
+#"ocean_model", "vo",           "vo",           "ocean_monthly", "all", "mean", "none",2
+#"ice_model",  "CI_tot",        "aice",         "ocean_monthly", "all", "mean", "none",2
+#"ice_model",  "HI",     "hice",      "ocean_monthly", "all", "mean", "none",2
+#"ice_model",  "HS",     "hsnow",     "ocean_monthly", "all", "mean", "none",2
+#"ice_model",  "sivol",  "sivol",     "ocean_monthly", "all", "mean", "none",2

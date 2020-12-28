@@ -1,0 +1,7 @@
+OCT/29/2020: adding ICE to Kate's NEP simulation; changing Z* to 75 layer
+OCT/30/2020: Things that needed changing for 75 layer
+		initial condition with 75 layers
+		change "NK" in MOM_input file to 75
+		Adjust max_depths value in MOM_input file to be consistent with the depth in the initial condition and vgrid fil
+NOV/04/202: Subbed in Kate's SIS_override and SIS_input 
+e
