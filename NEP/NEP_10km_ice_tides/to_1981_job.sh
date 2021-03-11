@@ -2,7 +2,7 @@
 #SBATCH --ntasks=504
 #SBATCH --clusters=c4
 #SBATCH --time=12
-#SBATCH --job-name=NEP_10km_ICE_TID
+#SBATCH --job-name=NEP_10km_ICE_TID_BBL.2
 
 cd /lustre/f2/scratch/gfdl/Liz.Drenkard/NEP
 

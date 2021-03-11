@@ -1,7 +1,7 @@
 NEP 75 vertical levels ice tides
 1900 1 1 0 0 0
 #"ocean_secs",   100,"seconds", 1, "hours", "time"
-"ocean_hourly",   1,  "hours", 1, "hours", "time"
+#"ocean_hourly",   1,  "hours", 1, "hours", "time"
 "ocean_daily",    1,   "days", 1, "hours", "time"
 "ocean_static",  -1,   months, 1,  "days", "time"
 #"flux",           1,  "hours", 1, "hours", "time"
@@ -12,7 +12,7 @@ NEP 75 vertical levels ice tides
 #"ocean_model","ubt_hifreq","ubt_hifreq","ocean_secs","all",.false.,"none",2
 #"ocean_model","vbt_hifreq","vbt_hifreq","ocean_secs","all",.false.,"none",2
 
-"ocean_model", "SSH",          "ssh",              "ocean_hourly", "all", .false., "none",2
+#"ocean_model", "SSH",          "ssh",              "ocean_hourly", "all", .false., "none",2
 #"ocean_model","SSU","ssu","ocean_hourly","all",.false.,"none",2
 #"ocean_model","SSV","ssv","ocean_hourly","all",.false.,"none",2
 #"ocean_model", "ubt",          "ubt",              "ocean_hourly", "all", .false., "none",2
@@ -32,7 +32,7 @@ NEP 75 vertical levels ice tides
 "ocean_model", "ubt",          "ubt",              "ocean_daily", "all", "mean", "none",2
 "ocean_model", "vbt",          "vbt",              "ocean_daily", "all", "mean", "none",2
 "ocean_model", "RV",           "RV",               "ocean_daily", "all", "mean", "none",2
-"ocean_model", "MEKE",           "MEKE",               "ocean_daily", "all", "mean", "none",2
+#"ocean_model", "MEKE",           "MEKE",               "ocean_daily", "all", "mean", "none",2
 #"ocean_model",  "rlntds",     "rlntds",           "ocean_daily", "all", "mean", "none",2  # longwave down
 #"ocean_model",  "hfls",       "hfls",             "ocean_daily", "all", "mean", "none",2  # latent heat for evap+melt
 #"ocean_model",  "hfss",       "hfss",             "ocean_daily", "all", "mean", "none",2  # sensible from air-sea and ice-sea
