@@ -3,5 +3,5 @@ OCT/30/2020: Things that needed changing for 75 layer
 		initial condition with 75 layers
 		change "NK" in MOM_input file to 75
 		Adjust max_depths value in MOM_input file to be consistent with the depth in the initial condition and vgrid fil
-NOV/04/202: Subbed in Kate's SIS_override and SIS_input 
-e
+NOV/04/2020: Subbed in Kate's SIS_override and SIS_input 
+MAR/11/2021: Created MOM_input_????_rivermix - trying to address observed lack of mixing near the coast

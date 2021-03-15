@@ -31,7 +31,7 @@ NEP 75 vertical levels ice tides
 "ocean_model", "vo",           "vo",               "ocean_daily", "all", "mean", "none",2
 "ocean_model", "ubt",          "ubt",              "ocean_daily", "all", "mean", "none",2
 "ocean_model", "vbt",          "vbt",              "ocean_daily", "all", "mean", "none",2
-"ocean_model", "RV",           "RV",               "ocean_daily", "all", "mean", "none",2
+"ocean_model", "lrunoff",      "lrunoff",          "ocean_daily", "all", "mean", "none",2
 #"ocean_model", "MEKE",           "MEKE",               "ocean_daily", "all", "mean", "none",2
 #"ocean_model",  "rlntds",     "rlntds",           "ocean_daily", "all", "mean", "none",2  # longwave down
 #"ocean_model",  "hfls",       "hfls",             "ocean_daily", "all", "mean", "none",2  # latent heat for evap+melt
