@@ -1,0 +1,47 @@
+#override RESOLN_SCALED_KHTR = True
+#override KH_RES_FN_POWER = 100
+#override VISC_RES_FN_POWER = 100
+#override MIN_THICKNESS = 1.e-6
+SAVE_INITIAL_CONDS = False
+
+#override OBC_TIDE_NODAL_REF_DATE = <YEAR>,7,2
+
+#override ENERGETICS_SFC_PBL = True
+#override EPBL_IS_ADDITIVE = False
+#override TKE_DECAY = 0.001
+#override EPBL_MSTAR_SCHEME = "REICHL_H18"
+#override MSTAR = 0.0
+#override RH18_MSTAR_CN3 = -6.0
+#override NSTAR = 0.06
+#override MSTAR_CONV_ADJ = 0.66
+#override USE_MLD_ITERATION = True
+#override EPBL_VEL_SCALE_SCHEME = "REICHL_H18"
+#override WSTAR_USTAR_COEF = 15.
+#override EPBL_VEL_SCALE_FACTOR = 0.5477
+#override VSTAR_SURF_FAC = 1.8258
+#override EPBL_TRANSITION_SCALE = 0.01
+#override EPBL_LT = True
+#override EPBL_LANGMUIR_SCHEME = "ADDITIVE"
+#override LT_MOD_LAC1 = 0.0
+#override LT_MOD_LAC2 = 0.0
+#override LT_MOD_LAC3 = 0.0
+#override LT_MOD_LAC4 = 0.8
+#override LT_MOD_LAC5 = 0.8
+#override LT_ENHANCE_COEF = 0.1056
+#override LT_ENHANCE_EXP = -1.
+#override LA_DEPTH_RATIO = 0.2
+#override USE_LA_LI2016 = True
+#override ML_OMEGA_FRAC = 0.001
+#override MSTAR_CAP = 10.0
+#override MIX_LEN_EXPONENT = 1.0
+#override PRANDTL_TURB = 1.25 
+#override KV_BBL_MIN = 1e-6
+#override KV_TBL_MIN = 1e-6 
+#override KD = 1.5E-05
+#override MEKE_KHMEKE_FAC = 1.0
+#override MEKE_ALPHA_RHINES = 0.15
+#override MEKE_ALPHA_EADY = 0.15
+#override GUST_CONST = 0.0
+#override DEBUG=FALSE
+
+
