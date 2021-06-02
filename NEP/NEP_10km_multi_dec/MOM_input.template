@@ -179,10 +179,10 @@ BRUSHCUTTER_MODE = True         !   [Boolean] default = False
 MASKING_DEPTH = 1.0             !   [m] default = -9999.0
                                 ! The depth below which to mask points as land points, for which all
                                 ! fluxes are zeroed out. MASKING_DEPTH is ignored if negative.
-OBC_TRACER_RESERVOIR_LENGTH_SCALE_OUT = 300.0 !   [m] default = 0.0
+OBC_TRACER_RESERVOIR_LENGTH_SCALE_OUT = 0.0 !   [m] default = 0.0
                                 ! An effective length scale for restoring the tracer concentration at the
                                 ! boundaries to externally imposed values when the flow is exiting the domain.
-OBC_TRACER_RESERVOIR_LENGTH_SCALE_IN = 300.0 !   [m] default = 0.0
+OBC_TRACER_RESERVOIR_LENGTH_SCALE_IN = 0.0 !   [m] default = 0.0
                                 ! An effective length scale for restoring the tracer concentration at the
                                 ! boundaries to values from the interior when the flow is entering the domain.
 
@@ -686,7 +686,7 @@ SPONGE_UV_DAMPING_FILE = "nep_10k_damp.nc"            ! Name of file containing 
 SPONGE_IDAMP_U_var = "Idamp"
 SPONGE_IDAMP_V_var = "Idamp"
 
-SPONGE_STATE_FILE = "nep_10k_soda_mnClim_1981.nc"   ! Name of the file with the state
+SPONGE_STATE_FILE = "nep_10k_soda_mnClim_1995.nc"   ! Name of the file with the state
                                                        ! to damp towards.
 SPONGE_PTEMP_VAR = "temp"
 SPONGE_SALT_VAR = "salt"
@@ -694,7 +694,7 @@ SPONGE_ETA_VAR = "ssh"          ! default = "ETA"
                                 ! The name of the interface height variable in SPONGE_STATE_FILE.
 
 
-SPONGE_UV_STATE_FILE = "nep_10k_soda_mnClim_1981.nc"
+SPONGE_UV_STATE_FILE = "nep_10k_soda_mnClim_1995.nc"
 SPONGE_U_VAR = "u"
 SPONGE_V_VAR = "v"
 

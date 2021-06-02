@@ -79,11 +79,15 @@
 /
 
  &ice_model_nml
+ nmask = 89
+ layout = 14, 36
  MOM_mask_table='INPUT/MOM_mask_table'
 /
 
  &ocean_model_nml
-MOM_mask_table='INPUT/MOM_mask_table'
+ nmask = 89
+layout = 14, 36
+ MOM_mask_table='INPUT/MOM_mask_table'
 /
 
  &icebergs_nml
